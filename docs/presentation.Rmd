@@ -1,0 +1,21 @@
+---
+title: "Prop 11"
+author: "Jared Joseph & Savannah Hunter"
+date: "October 30, 2018"
+output:
+  slidy_presentation:
+    css: style.css
+    footer: UC Davis DSI - Proposition Visualization Challenge
+    duration: 5
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Prop 11
+* Requires Private-Sector Emergency Ambulance Employees to Remain on Call During Work Breaks. 
+  + Employers will provide paid training on active shooter and mass casualty incidents, natural disasters, preventing violence to themselves and patients (some already receive training).
+  + Requires employers to provide mental health and wellness education with 30 days of hire and each year.
+  + Requires employers to make information about mental health treatment and support services known (some already have this benefit).
+  + Requires employers to provide coverage of up to 10 mental health treatments per year. Qualified employees can receive long-term services.
