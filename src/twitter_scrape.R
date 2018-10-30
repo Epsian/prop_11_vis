@@ -4,6 +4,7 @@ prop11_tweets = function(){
 
 #### Setup ####
 library(rtweet)
+source("data/twitter_cred.R")
 
 # setwd()
 
