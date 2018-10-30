@@ -4,6 +4,16 @@
 library(caret)
 library(tm)
 
+library(doParallel)
+
+# Register Parallel
+cl = makeCluster(6)
+registerDoParallel(cl)
+
+on.exit({
+  stopCluster(cl)
+})
+
 #### in/out ####
 # Read Teets
 tweets = list.files(path = "data/tweets/", full.names = TRUE)
