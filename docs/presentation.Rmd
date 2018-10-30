@@ -3,19 +3,46 @@ title: "Prop 11"
 author: "Jared Joseph & Savannah Hunter"
 date: "October 30, 2018"
 output:
-  slidy_presentation:
-    css: style.css
-    footer: UC Davis DSI - Proposition Visualization Challenge
-    duration: 5
+  ioslides_presentation: 
+    fig_caption: yes
+    widescreen: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Prop 11
-* Requires Private-Sector Emergency Ambulance Employees to Remain on Call During Work Breaks. 
+## Prop 11 {.smaller}
+
+<div class="columns-2">
+
+* Requires Private-Sector Emergency Ambulance Employees to Remain on Call During Work Breaks.
+
   + Employers will provide paid training on active shooter and mass casualty incidents, natural disasters, preventing violence to themselves and patients (some already receive training).
-  + Requires employers to provide mental health and wellness education with 30 days of hire and each year.
-  + Requires employers to make information about mental health treatment and support services known (some already have this benefit).
-  + Requires employers to provide coverage of up to 10 mental health treatments per year. Qualified employees can receive long-term services.
+
++ Requires employers to provide mental health and wellness education with 30 days of hire and each year.
+
++ Requires employers to make information about mental health treatment and support services known (some already have this benefit).
+
++ Requires employers to provide coverage of up to 10 mental health treatments per year. Qualified employees can receive long-term services.
+
+```{r}
+table = data.frame(Yes = c("Private ambulance companies can continue their current practice (illegal under current labor law) of having EMTs and paramedics to stay on-duty “on call” during their meal and rest breaks to answer 911 calls. If scheduled breaks are interrupted by a call that meal or rest period does not count toward the meal or rest period entitled to the employee.
+", "$29,925,785.96 (most by American Medical Response one of the largest private EMT and paramedic employers)",  "Any pending lawsuits for violating past labor law may be prevented.  "),
+No = c("Private companies will be subject to labor law. Based on a 2016 court case these companies would have to provide EMTs and paramedics with off-duty meal and rest breaks that cannot be interrupted by 911 calls.", "$0.00", "Ambulance company costs may increase by about $100 million a year to operate more ambulances to fill in during breaks.")
+#row.names = c("Basics", "Funding", "Impact")
+)
+
+knitr::kable(table)
+```
+
+</div>
+
+***
+
+
+
+```{r plot, echo=FALSE}
+
+```
+
