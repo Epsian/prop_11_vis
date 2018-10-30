@@ -46,4 +46,6 @@ tweets$tag = factor(tweets$tag, levels = c("Yes", "Neutral", "No"))
 
 p = plot_ly()
 p = add_trace(p, x = jitter(as.numeric(tweets$tag), 1), y = tweets$similarity, mode = "markers", type = "scatter", marker = list(size = tweets$favorite_count + 5), text = tweets$text, color = tweets$tag)
-p = layout(p, title = "Percent Similarity with Official YES Statement by Position", yaxis = list(title = "% Cosine Similarity with 'YES' Statement"))
+p = layout(p, title = "Percent Similarity with Official YES Statement by Position",
+           yaxis = list(title = "% Cosine Similarity with 'YES' Statement"),
+           xaxis = list(showline = FALSE, showticklabels = FALSE))
