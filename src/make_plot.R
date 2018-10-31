@@ -49,3 +49,6 @@ p = add_trace(p, x = jitter(as.numeric(tweets$tag), 1), y = tweets$similarity, m
 p = layout(p, title = "Percent Similarity with Official YES Statement by Position",
            yaxis = list(title = "% Cosine Similarity with 'YES' Statement"),
            xaxis = list(showline = FALSE, showticklabels = FALSE))
+
+saveRDS(p, "vis/plot.rda")
+
