@@ -2,6 +2,7 @@
 
 #### Setup ####
 library(caret)
+library(tm)
 
 #### in/out ####
 # read classifier
